@@ -1,5 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
 
+html {
+	scroll-behavior: smooth;
+}
+
 body {
 	margin: 0 auto;
 	background-color: #444444;
@@ -50,6 +54,21 @@ a {
 	font-size: 16px;
 }
 
+.text_decoration:after {
+	display: block;
+	right: 0;
+	width: 0;
+	height: 2px;
+	background-color: #0167ff;
+	content: '';
+	transition: width 0.3s ease-out;
+}
+
+.text_decoration:hover:after,
+.text_decoration:focus:after {
+	width: 100%;
+}
+
 .buttonNav {
 	border: 2px #0167ff solid;
 	background-color: transparent;
@@ -60,6 +79,13 @@ a {
 	font-family: 'Montserrat', sans-serif;
 	font-weight: 600;
 	font-size: 16px;
+}
+
+.buttonNav:hover {
+	background-color: #0167ff;
+	border: 2px #0167ff solid;
+	color: #fff;
+	transition: 0.2s;
 }
 
 .container {
@@ -249,6 +275,216 @@ ul {
 .cardSec-3__text {
 	font-size: 16px;
 	max-width: 214px;
+}
+
+.slider {
+	width: 1260px;
+	height: 518px;
+	border: none;
+	margin: 30px auto;
+	overflow: hidden;
+}
+
+.slider_line {
+	display: flex;
+	flex-direction: row;
+}
+
+.slide_object:nth-child(n + 2) {
+	margin-left: 55px;
+}
+
+.slide_object {
+	display: flex;
+	flex-direction: column;
+}
+
+.slide_text {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+	margin-top: 33px;
+	border: 2px #94bfff solid;
+	border-radius: 35px;
+	width: 368px;
+	height: 109px;
+}
+
+.slider_btn {
+	display: flex;
+	width: 100%;
+}
+
+.arrow {
+	border: none;
+}
+
+.aboutH2 {
+	margin-bottom: 30px;
+}
+
+.div_form {
+	margin: 45px auto;
+	background: url(img/bg_form.png) no-repeat;
+	min-width: 100%;
+	zoom: 1.25;
+}
+
+.h2_form {
+	margin-top: 0;
+}
+
+.forma {
+	width: 488px;
+	height: 617px;
+	margin-left: 32px;
+	background-color: #444444;
+	margin-top: 29px;
+	margin-bottom: 29px;
+	border-radius: 15px;
+}
+
+form {
+	width: 100%;
+	height: 100%;
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+}
+
+input {
+	border-radius: 15px;
+	border: none;
+	width: 418px;
+	height: 70px;
+	margin-top: 18px;
+
+	text-align: left;
+	padding-left: 10px;
+
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 400;
+	font-size: 20px;
+}
+
+input:focus {
+	outline: none;
+}
+
+.margin_top {
+	margin-top: 32px;
+}
+
+textarea {
+	border-radius: 15px;
+	border: none;
+	width: 418px;
+	height: 242px;
+	resize: none;
+	margin-top: 18px;
+
+	text-align: left;
+	padding-left: 10px;
+	padding-top: 10px;
+
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 400;
+	font-size: 20px;
+}
+
+textarea:focus {
+	outline: none;
+}
+
+.btn_form {
+	padding: 22px 113px;
+	margin-top: 18px;
+	transition: 0.2s;
+}
+
+.btn_form:hover {
+	background-color: #0167ff;
+	border: 2px #0167ff solid;
+	color: #fff;
+	transition: 0.2s;
+}
+
+.bass {
+	display: flex;
+	align-content: center;
+	justify-content: center;
+	align-items: center;
+}
+
+.btn_bass {
+	width: 213px;
+	height: 65px;
+
+	border: 2px #94bfff solid;
+	background-color: transparent;
+	border-radius: 50px;
+	padding: 10px 10px;
+
+	border: 2px #94bfff solid;
+	background-color: transparent;
+	border-radius: 50px;
+	padding: 10px 10px;
+	color: #94bfff;
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 600;
+	font-size: 20px;
+	margin-top: 5px;
+	cursor: pointer;
+	transition: 0.2s;
+	text-align: center;
+	align-items: center;
+	align-content: center;
+	padding: 0;
+}
+
+.btn_bass1 {
+	width: 213px;
+	height: 65px;
+}
+
+.btns_bass {
+	display: flex;
+	width: 459px;
+	height: 156px;
+	flex-wrap: wrap;
+	align-content: space-between;
+	justify-content: space-between;
+}
+
+.basement {
+	display: flex;
+	width: 950px;
+	justify-content: space-between;
+}
+
+.btn_contact {
+	display: flex;
+	flex-direction: column;
+	height: 280px;
+	justify-content: space-between;
+}
+
+.text_contacts_sections {
+	margin-bottom: 96px;
+	width: 214px;
+	text-align: center;
+}
+
+.sec-7 {
+	margin-bottom: 60px;
+}
+
+.btn_bass:hover {
+	background-color: #0167ff;
+	border: 2px #0167ff solid;
+	color: #fff;
+	transition: 0.2s;
 }
 /*.cardSec-3__text--wide {
 	width: 220px !important;
