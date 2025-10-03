@@ -134,3 +134,50 @@ document
 			submitBtn.disabled = false
 		}
 	})
+
+class ModalWindow {
+	constructor() {
+		this.popupFade = document.getElementById('popupFade')
+		this.modalWindow = document.getElementById('modalWindow')
+		this.exitBtn = document.querySelector('.exit')
+		this.openModalBtn = document.querySelector('.trigerModal')
+
+		this.init()
+	}
+
+	init() {
+		this.openModalBtn.addEventListener('click', () => {
+			this.openModal()
+		})
+
+		this.exitBtn.addEventListener('click', () => {
+			this.closeModal()
+		})
+
+		this.popupFade.addEventListener('click', (e) => {
+			if (e.target === this.popupFade) {
+				this.closeModal()
+			}
+		})
+
+		this.modalWindow.addEventListener('click', (e) => {
+			e.stopPropagation()
+		})
+	}
+
+	openModal() {
+		this.popupFade.style.display = 'block'
+		this.modalWindow.style.display = 'block'
+		document.body.style.overflow = 'hidden'
+	}
+
+	closeModal() {
+		this.popupFade.style.display = 'none'
+		this.modalWindow.style.display = 'none'
+		document.body.style.overflow = ''
+	}
+}
+
+document.addEventListener('DOMContentLoaded', () => {
+	new ModalWindow()
+})
