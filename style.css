@@ -4,6 +4,22 @@ html {
 	scroll-behavior: smooth;
 }
 
+.popup-fade {
+	display: none;
+}
+
+.popup-fade:before {
+	content: '';
+	background: #000;
+	position: fixed;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	opacity: 0.7;
+	z-index: 4;
+}
+
 body {
 	margin: 0 auto;
 	background-color: #444444;
@@ -44,6 +60,59 @@ nav {
 
 .hide {
 	transform: translateY(-100px);
+}
+
+.modal {
+	display: none;
+	z-index: 5;
+	position: fixed;
+	left: 35%;
+	top: 10%;
+	width: 488px;
+	height: 792px;
+	border-radius: 15px 15px 15px 15px;
+}
+
+.form_modal {
+	height: 630px;
+}
+
+.button_center {
+	align-items: center;
+	margin: 5px;
+}
+
+.button_center {
+	display: flex;
+	justify-content: center;
+	align-content: center;
+}
+
+.flex_column {
+	flex-direction: column;
+}
+
+.btn_hover:hover {
+	transition: 0.2s;
+	background-color: #0167ff;
+	border: 2px #0167ff solid;
+}
+
+.text_modal {
+	font-family: 'Open Sans', sans-serif;
+	color: #fff;
+	font-weight: 400;
+	margin: 0;
+	font-size: 16px;
+	margin-top: 18px;
+
+	width: 430px;
+	text-align: center;
+}
+
+.politika {
+	color: #94bfff;
+	font-weight: 400;
 }
 
 a {
@@ -484,6 +553,22 @@ textarea:focus {
 	background-color: #0167ff;
 	border: 2px #0167ff solid;
 	color: #fff;
+	transition: 0.2s;
+}
+
+.exit {
+	border: none;
+}
+
+.btn_exit {
+	position: absolute;
+	left: 96%;
+	top: -3%;
+	transition: 0.2s;
+}
+
+.btn_exit:hover {
+	scale: 1.3;
 	transition: 0.2s;
 }
 /*.cardSec-3__text--wide {
