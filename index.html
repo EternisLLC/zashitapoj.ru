@@ -21,8 +21,67 @@
 				<button class="buttonNav">WA</button>
 			</div>
 		</nav>
+		<div class="popup-fade" id="popupFade" style="display: none">
+			<section class="modal" id="modalWindow">
+				<button class="exit">
+					<img src="img/exit.svg" alt="" class="btn_exit" />
+				</button>
+				<form
+					id="applicationForm"
+					action="https://formspree.io/f/manpjajk"
+					method="POST"
+					class="form_modal"
+				>
+					<div class="input_forma">
+						<input
+							type="text"
+							id="name"
+							name="Имя"
+							required
+							placeholder="Имя"
+							class="margin_top"
+						/>
+					</div>
 
-		<modal><form action=""></form></modal>
+					<div class="input_forma">
+						<input
+							type="tel"
+							id="phone"
+							name="Телефон"
+							required
+							placeholder="Телефон"
+						/>
+					</div>
+
+					<div class="input_forma">
+						<textarea
+							id="note"
+							name="Примечание"
+							rows="4"
+							placeholder="Примечание"
+						></textarea>
+					</div>
+
+					<button type="submit" class="btn_form">
+						Отправить заявку
+					</button>
+
+					<p class="text_modal">
+						Нажимая кнопку, вы соглашаетесь с
+						<a href="" class="politika"
+							>политикой обработки персональных данных</a
+						>
+					</p>
+				</form>
+				<div class="button_center flex_column">
+					<button class="button_center">8 (800) 555-8729</button>
+					<div class="button_center">
+						<button class="button_center btn_hover">TG</button>
+						<button class="button_center btn_hover">WA</button>
+					</div>
+				</div>
+			</section>
+		</div>
 
 		<main>
 			<div class="container">
