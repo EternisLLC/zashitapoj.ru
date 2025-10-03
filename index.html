@@ -11,9 +11,9 @@
 		<nav class="nav">
 			<div class="navBtn">
 				<img src="img/logo.png" alt="" />
-				<a href="">О нас</a>
-				<a href="">Услуги</a>
-				<a href="">Проекты</a>
+				<a href="#about" class="text_decoration">О нас</a>
+				<a href="#services" class="text_decoration">Услуги</a>
+				<a href="#projects" class="text_decoration">Проекты</a>
 			</div>
 			<button class="trigerModal buttonNav">Заказать звонок</button>
 			<div>
@@ -38,7 +38,7 @@
 			</div>
 		</main>
 
-		<section class="sec-2">
+		<section class="sec-2" id="about">
 			<div class="container">
 				<h1>О нас</h1>
 				<p class="textSec2">
@@ -113,7 +113,7 @@
 			</div>
 		</section>
 
-		<section>
+		<section class="sec-3" id="services">
 			<div class="container sec-3">
 				<div>
 					<h1>Услуги</h1>
@@ -155,9 +155,235 @@
 			</div>
 		</section>
 
-		<section>
+		<section class="sec-4" id="projects">
 			<div class="container">
 				<h1>Наши проекты</h1>
+				<div class="slider_btn">
+					<button class="arrow slide_btn_prev">
+						<img src="img/arrow_left.png" alt="" />
+					</button>
+					<div class="slider">
+						<div class="slider_line">
+							<div class="slide_object">
+								<img src="img/slide1.png" alt="" />
+								<p class="slide_text">
+									г. Раменское,<br />ул. Михалевича,<br />5
+								</p>
+							</div>
+							<div class="slide_object">
+								<img src="img/slide2.png" alt="" />
+								<p class="slide_text">
+									Домодедово,<br />промзона «Авиационная»
+								</p>
+							</div>
+							<div class="slide_object">
+								<img src="img/slide3.png" alt="" />
+								<p class="slide_text">
+									г. Коломна,<br />ул. Октябрьской
+									революции,<br />362
+								</p>
+							</div>
+							<div class="slide_object">
+								<img src="img/slide4.png" alt="" />
+								<p class="slide_text">
+									г. Электросталь,<br />ш. Ногинское,<br />1-й
+									км
+								</p>
+							</div>
+							<div class="slide_object">
+								<img src="img/slide5.png" alt="" />
+								<p class="slide_text">
+									г. Екатеринбург,<br />ул. Вайнера,<br />9
+								</p>
+							</div>
+							<div class="slide_object">
+								<img src="img/slide6.png" alt="" />
+								<p class="slide_text">
+									г. Москва,<br />Промышленная улица,<br />17
+								</p>
+							</div>
+							<div class="slide_object">
+								<img src="img/slide7.png" alt="" />
+								<p class="slide_text">
+									г. Екатеринбург,<br />Сибирский тракт,<br />8Н
+								</p>
+							</div>
+							<div class="slide_object">
+								<img src="img/slide8.png" alt="" />
+								<p class="slide_text">
+									г. Санкт-Петербург,<br />ул.
+									Партизанская,<br />17А
+								</p>
+							</div>
+							<div class="slide_object">
+								<img src="img/slide9.png" alt="" />
+								<p class="slide_text">
+									г. Санкт-Петербург,<br />Большой просп.<br />Васильевского
+									острова, 68
+								</p>
+							</div>
+							<div class="slide_object">
+								<img src="img/slide10.png" alt="" />
+								<p class="slide_text">
+									г. Екатеринбург,<br />ул. Восточная,<br />7В
+								</p>
+							</div>
+						</div>
+					</div>
+					<button class="arrow slide_btn_next">
+						<img src="img/arrow_right.png" alt="" />
+					</button>
+				</div>
+			</div>
+		</section>
+
+		<section class="sec-5" id="approach">
+			<div class="container">
+				<h1>Наш подход</h1>
+				<p class="textSec2">
+					Проектирование пожарной безопасности — это стратегическая
+					задача, где нет места шаблонам. Мы создаем индивидуальные
+					решения, основанные на глубоком анализе рисков, строгих
+					нормативах и передовых технологиях, чтобы защитить самое
+					ценное — ваших людей, имущество и бизнес.
+				</p>
+			</div>
+			<div class="container">
+				<div class="icons">
+					<button class="iconImg active scale" data-tab="#tab_4">
+						<img src="img/like.svg" alt="" />
+					</button>
+
+					<img src="img/line.png" alt="" />
+					<button class="iconImg" data-tab="#tab_5">
+						<img
+							src="img/nadejnost.svg"
+							alt=""
+							class="iconImg"
+							data-tab="#tab_1"
+						/>
+					</button>
+
+					<img src="img/line.png" alt="" />
+					<button class="iconImg" data-tab="#tab_6">
+						<img src="img/doverie.svg" alt="" />
+					</button>
+				</div>
+				<div>
+					<div class="iconText active" id="tab_4">
+						<h2 class="aboutH2">Качество</h2>
+						<p>
+							Наше качество — это идеальное соответствие системы
+							вашим уникальным задачам. Мы достигаем его благодаря
+							скрупулезному анализу объекта, обоснованному выбору
+							оборудования и детализированной проектной
+							документации, которая исключает ошибки на всех
+							этапах.
+						</p>
+					</div>
+					<div class="iconText" id="tab_5">
+						<h2 class="aboutH2">Надежность</h2>
+						<p>
+							Мы проектируем системы с запасом прочности на годы
+							вперед. Принципы резервирования, использование
+							проверенного оборудования и учет всех внешних
+							факторов гарантируют безотказную работу безопасности
+							в любой ситуации.
+						</p>
+					</div>
+					<div class="iconText" id="tab_6">
+						<h2 class="aboutH2">Доверие</h2>
+						<p>
+							Мы строим долгосрочные партнерства на честности и
+							персональной ответственности. Вы получаете
+							прозрачность процесса, полное сопровождение проекта
+							и уверенность в том, что ваша безопасность в
+							надежных руках.
+						</p>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="sec-6">
+			<div class="container">
+				<h1>Заполни и мы ответим на вопросы</h1>
+				<h2 class="h2_form">
+					Оставьте заявку, и с вами свяжется специалист.<br />Он
+					ответит на все вопросы.
+				</h2>
+				<div class="div_form">
+					<div class="forma">
+						<form
+							id="applicationForm"
+							action="https://formspree.io/f/manpjajk"
+							method="POST"
+						>
+							<div class="input_forma">
+								<input
+									type="text"
+									id="name"
+									name="Имя"
+									required
+									placeholder="Имя"
+									class="margin_top"
+								/>
+							</div>
+
+							<div class="input_forma">
+								<input
+									type="tel"
+									id="phone"
+									name="Телефон"
+									required
+									placeholder="Телефон"
+								/>
+							</div>
+
+							<div class="input_forma">
+								<textarea
+									id="note"
+									name="Примечание"
+									rows="4"
+									placeholder="Примечание"
+								></textarea>
+							</div>
+
+							<button type="submit" class="btn_form">
+								Отправить заявку
+							</button>
+						</form>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="sec-7">
+			<div class="container bass">
+				<img src="img/logo_bass.svg" alt="" />
+				<div class="basement">
+					<div class="contacts_sections">
+						<div class="text_contacts_sections">
+							<h2>Разделы</h2>
+						</div>
+						<div class="btns_bass">
+							<a href="#about" class="btn_bass">О нас</a>
+							<a href="#services" class="btn_bass">Услуги</a>
+							<a href="#projects" class="btn_bass">Проекты</a>
+							<a href="#approach" class="btn_bass">Подход</a>
+						</div>
+					</div>
+					<div class="contacts_sections">
+						<div class="text_contacts_sections">
+							<h2>Контакты</h2>
+						</div>
+						<div class="btn_contact">
+							<button class="btn_bass1">8 (800) 555-8729</button>
+							<button class="btn_bass">Telegram</button>
+							<button class="btn_bass">WhatsApp</button>
+						</div>
+					</div>
+				</div>
 			</div>
 		</section>
 	</body>
